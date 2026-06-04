@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 15.2 - Shadow & Rounded Pill</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+  <div class="container my-5">
+    <h2 class="text-center fw-bold mb-5">
+      Exercise 15.2 - Shadow & Rounded Pill in Cards
+    </h2>
+
+    <!-- SHADOW UTILITIES -->
+    <div class="card border-0 shadow-sm mb-4">
+      <div class="card-header bg-primary text-white py-3">
+        <h6 class="fw-bold mb-0">Shadow Utilities</h6>
+      </div>
+      <div class="card-body">
+        <div class="row g-4 text-center">
+
+          <!-- No Shadow -->
+          <div class="col-md-3 col-6">
+            <div class="card p-3 border">
+              <h6 class="fw-bold">No Shadow</h6>
+              <p class="text-muted small mb-0">Default card</p>
+            </div>
+            <code class="small">no class</code>
+          </div>
+
+          <!-- shadow-sm -->
+          <div class="col-md-3 col-6">
+            <div class="card p-3 border-0 shadow-sm">
+              <h6 class="fw-bold">Small Shadow</h6>
+              <p class="text-muted small mb-0">
+                Subtle shadow
+              </p>
+            </div>
+            <code class="small">shadow-sm</code>
+          </div>
+
+          <!-- shadow -->
+          <div class="col-md-3 col-6">
+            <div class="card p-3 border-0 shadow">
+              <h6 class="fw-bold">Regular Shadow</h6>
+              <p class="text-muted small mb-0">
+                Medium shadow
+              </p>
+            </div>
+            <code class="small">shadow</code>
+          </div>
+
+          <!-- shadow-lg -->
+          <div class="col-md-3 col-6">
+            <div class="card p-3 border-0 shadow-lg">
+              <h6 class="fw-bold">Large Shadow</h6>
+              <p class="text-muted small mb-0">
+                Heavy shadow
+              </p>
+            </div>
+            <code class="small">shadow-lg</code>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ROUNDED PILL ON CARDS -->
+    <div class="card border-0 shadow-sm mb-4">
+      <div class="card-header bg-success text-white py-3">
+        <h6 class="fw-bold mb-0">Rounded Pill on Cards</h6>
+      </div>
+      <div class="card-body">
+        <div class="row g-4 text-center">
+
+          <!-- rounded -->
+          <div class="col-md-3 col-6">
+            <div class="card p-3 border shadow rounded">
+              <h6 class="fw-bold">rounded</h6>
+              <p class="text-muted small mb-0">
+                Small corner radius
+              </p>
+            </div>
+          </div>
+
+          <!-- rounded-3 -->
+          <div class="col-md-3 col-6">
+            <div class="card p-3 border shadow rounded-3">
+              <h6 class="fw-bold">rounded-3</h6>
+              <p class="text-muted small mb-0">
+                Medium corner radius
+              </p>
+            </div>
+          </div>
+
+          <!-- rounded-4 -->
+          <div class="col-md-3 col-6">
+            <div class="card p-3 border shadow rounded-4">
+              <h6 class="fw-bold">rounded-4</h6>
+              <p class="text-muted small mb-0">
+                Large corner radius
+              </p>
+            </div>
+          </div>
+
+          <!-- rounded-pill -->
+          <div class="col-md-3 col-6">
+            <div class="card p-3 border shadow rounded-pill">
+              <h6 class="fw-bold">rounded-pill</h6>
+              <p class="text-muted small mb-0">
+                Full pill shape
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- COMBINED — PRODUCT CARDS -->
+    <div class="card border-0 shadow-sm mb-4">
+      <div class="card-header bg-dark text-white py-3">
+        <h6 class="fw-bold mb-0">
+          ✅ Practical Example — Product Cards
+        </h6>
+      </div>
+      <div class="card-body">
+        <div class="row g-4">
+
+          <!-- Product Card 1 -->
+          <div class="col-md-4">
+            <div class="card border-0 shadow rounded-4 h-100">
+              <img src="https://picsum.photos/seed/product1/400/200"
+                   class="card-img-top rounded-top-4" alt="Product">
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between 
+                            align-items-center mb-2">
+                  <h5 class="card-title fw-bold mb-0">
+                    Product One
+                  </h5>
+                  <span class="badge bg-primary rounded-pill 
+                               px-3">New</span>
+                </div>
+                <p class="text-muted small">
+                  A great product with shadow and rounded corners.
+                </p>
+                <div class="d-flex justify-content-between 
+                            align-items-center mt-3">
+                  <span class="fw-bold text-primary fs-5">
+                    ₹1,299
+                  </span>
+                  <button class="btn btn-primary 
+                                 rounded-pill px-4">
+                    Buy Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 2 -->
+          <div class="col-md-4">
+            <div class="card border-0 shadow-lg rounded-4 h-100">
+              <img src="https://picsum.photos/seed/product2/400/200"
+                   class="card-img-top rounded-top-4" alt="Product">
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between 
+                            align-items-center mb-2">
+                  <h5 class="card-title fw-bold mb-0">
+                    Product Two
+                  </h5>
+                  <span class="badge bg-success rounded-pill 
+                               px-3">Sale</span>
+                </div>
+                <p class="text-muted small">
+                  This card uses shadow-lg for a stronger effect.
+                </p>
+                <div class="d-flex justify-content-between 
+                            align-items-center mt-3">
+                  <span class="fw-bold text-success fs-5">
+                    ₹2,499
+                  </span>
+                  <button class="btn btn-success 
+                                 rounded-pill px-4">
+                    Buy Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 3 -->
+          <div class="col-md-4">
+            <div class="card border-0 shadow rounded-4 h-100">
+              <img src="https://picsum.photos/seed/product3/400/200"
+                   class="card-img-top rounded-top-4" alt="Product">
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between 
+                            align-items-center mb-2">
+                  <h5 class="card-title fw-bold mb-0">
+                    Product Three
+                  </h5>
+                  <span class="badge bg-danger rounded-pill 
+                               px-3">Hot</span>
+                </div>
+                <p class="text-muted small">
+                  Rounded pill badges and buttons look great
+                  on cards.
+                </p>
+                <div class="d-flex justify-content-between 
+                            align-items-center mt-3">
+                  <span class="fw-bold text-danger fs-5">
+                    ₹3,999
+                  </span>
+                  <button class="btn btn-danger 
+                                 rounded-pill px-4">
+                    Buy Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- REFERENCE TABLE -->
+    <div class="card border-0 shadow-sm">
+      <div class="card-header bg-dark text-white py-3">
+        <h6 class="fw-bold mb-0">📊 Quick Reference</h6>
+      </div>
+      <div class="card-body p-0">
+        <div class="table-responsive">
+          <table class="table table-bordered 
+                        table-hover mb-0 text-center">
+            <thead class="table-dark">
+              <tr>
+                <th>Class</th>
+                <th>Effect</th>
+                <th>Best Used On</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>shadow-sm</code></td>
+                <td>Small subtle shadow</td>
+                <td>Subtle cards, inputs</td>
+              </tr>
+              <tr>
+                <td><code>shadow</code></td>
+                <td>Medium shadow</td>
+                <td>Cards, modals</td>
+              </tr>
+              <tr>
+                <td><code>shadow-lg</code></td>
+                <td>Large strong shadow</td>
+                <td>Featured cards, popups</td>
+              </tr>
+              <tr>
+                <td><code>shadow-none</code></td>
+                <td>Removes all shadow</td>
+                <td>Override shadow</td>
+              </tr>
+              <tr>
+                <td><code>rounded-pill</code></td>
+                <td>Full pill/capsule shape</td>
+                <td>Badges, buttons, tags</td>
+              </tr>
+              <tr>
+                <td><code>rounded-circle</code></td>
+                <td>Perfect circle</td>
+                <td>Avatar images</td>
+              </tr>
+              <tr>
+                <td><code>rounded-4</code></td>
+                <td>Large border radius</td>
+                <td>Modern card corners</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

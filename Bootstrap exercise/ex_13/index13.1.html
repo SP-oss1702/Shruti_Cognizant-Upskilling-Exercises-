@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 13.1 - Dashboard</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+  <!-- TOP NAVBAR -->
+  <nav class="navbar navbar-dark bg-dark px-4 py-3">
+    <span class="navbar-brand fw-bold fs-4">📊 MyDashboard</span>
+    <div class="d-flex gap-2 align-items-center">
+      <span class="text-white">Welcome, Admin</span>
+      <button class="btn btn-outline-light btn-sm">Logout</button>
+    </div>
+  </nav>
+
+  <div class="container-fluid py-4 px-4">
+
+    <h4 class="fw-bold mb-4">Dashboard Overview</h4>
+
+    <!-- STAT CARDS ROW -->
+    <div class="row g-4 mb-4">
+
+      <!-- TOTAL USERS -->
+      <div class="col-md-3">
+        <div class="card bg-primary text-white shadow h-100">
+          <div class="card-body p-4">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <p class="mb-1 text-white-50">Total Users</p>
+                <h3 class="fw-bold mb-0">12,480</h3>
+              </div>
+              <span style="font-size: 2.5rem;">👥</span>
+            </div>
+            <hr class="border-white-50 my-3">
+            <small class="text-white-50">
+              ↑ 8% from last month
+            </small>
+          </div>
+        </div>
+      </div>
+
+      <!-- TOTAL REVENUE -->
+      <div class="col-md-3">
+        <div class="card bg-success text-white shadow h-100">
+          <div class="card-body p-4">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <p class="mb-1 text-white-50">Total Revenue</p>
+                <h3 class="fw-bold mb-0">₹9,24,500</h3>
+              </div>
+              <span style="font-size: 2.5rem;">💰</span>
+            </div>
+            <hr class="border-white-50 my-3">
+            <small class="text-white-50">
+              ↑ 15% from last month
+            </small>
+          </div>
+        </div>
+      </div>
+
+      <!-- PENDING ORDERS -->
+      <div class="col-md-3">
+        <div class="card bg-warning text-dark shadow h-100">
+          <div class="card-body p-4">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <p class="mb-1 text-dark">Pending Orders</p>
+                <h3 class="fw-bold mb-0">340</h3>
+              </div>
+              <span style="font-size: 2.5rem;">🕐</span>
+            </div>
+            <hr class="my-3">
+            <small class="text-dark">
+              ↓ 3% from last month
+            </small>
+          </div>
+        </div>
+      </div>
+
+      <!-- COMPLAINTS -->
+      <div class="col-md-3">
+        <div class="card bg-danger text-white shadow h-100">
+          <div class="card-body p-4">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <p class="mb-1 text-white-50">Complaints</p>
+                <h3 class="fw-bold mb-0">28</h3>
+              </div>
+              <span style="font-size: 2.5rem;">⚠️</span>
+            </div>
+            <hr class="border-white-50 my-3">
+            <small class="text-white-50">
+              ↓ 5% from last month
+            </small>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SECOND ROW -->
+    <div class="row g-4 mb-4">
+
+      <!-- RECENT ORDERS TABLE -->
+      <div class="col-md-8">
+        <div class="card shadow h-100">
+          <div class="card-header bg-dark text-white py-3">
+            <h6 class="fw-bold mb-0">📋 Recent Orders</h6>
+          </div>
+          <div class="card-body p-0">
+            <table class="table table-hover mb-0">
+              <thead class="table-light">
+                <tr>
+                  <th class="ps-3">Order ID</th>
+                  <th>Customer</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="ps-3">#1001</td>
+                  <td>John Smith</td>
+                  <td>₹1,200</td>
+                  <td>
+                    <span class="badge bg-success">Delivered</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="ps-3">#1002</td>
+                  <td>Sarah Johnson</td>
+                  <td>₹3,500</td>
+                  <td>
+                    <span class="badge bg-warning text-dark">Pending</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="ps-3">#1003</td>
+                  <td>Mike Williams</td>
+                  <td>₹800</td>
+                  <td>
+                    <span class="badge bg-danger">Cancelled</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="ps-3">#1004</td>
+                  <td>Emily Davis</td>
+                  <td>₹5,000</td>
+                  <td>
+                    <span class="badge bg-info text-dark">Processing</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="ps-3">#1005</td>
+                  <td>Robert Brown</td>
+                  <td>₹2,300</td>
+                  <td>
+                    <span class="badge bg-success">Delivered</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- ALERTS & NOTIFICATIONS -->
+      <div class="col-md-4">
+        <div class="card shadow h-100">
+          <div class="card-header bg-dark text-white py-3">
+            <h6 class="fw-bold mb-0">🔔 Notifications</h6>
+          </div>
+          <div class="card-body">
+
+            <div class="alert alert-primary py-2">
+              <strong>Info:</strong> System update scheduled tonight.
+            </div>
+            <div class="alert alert-success py-2">
+              <strong>Success:</strong> Backup completed successfully.
+            </div>
+            <div class="alert alert-warning py-2">
+              <strong>Warning:</strong> Storage is 80% full.
+            </div>
+            <div class="alert alert-danger py-2">
+              <strong>Error:</strong> Payment gateway timeout.
+            </div>
+            <div class="alert alert-info py-2">
+              <strong>Note:</strong> 5 new users registered today.
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BACKGROUND COLOR REFERENCE -->
+    <div class="card shadow mb-4">
+      <div class="card-header bg-dark text-white py-3">
+        <h6 class="fw-bold mb-0">🎨 Background Color Reference</h6>
+      </div>
+      <div class="card-body">
+        <div class="row g-3 text-center">
+          <div class="col-md-2 col-6">
+            <div class="bg-primary text-white p-3 rounded">
+              bg-primary
+            </div>
+          </div>
+          <div class="col-md-2 col-6">
+            <div class="bg-secondary text-white p-3 rounded">
+              bg-secondary
+            </div>
+          </div>
+          <div class="col-md-2 col-6">
+            <div class="bg-success text-white p-3 rounded">
+              bg-success
+            </div>
+          </div>
+          <div class="col-md-2 col-6">
+            <div class="bg-danger text-white p-3 rounded">
+              bg-danger
+            </div>
+          </div>
+          <div class="col-md-2 col-6">
+            <div class="bg-warning text-dark p-3 rounded">
+              bg-warning
+            </div>
+          </div>
+          <div class="col-md-2 col-6">
+            <div class="bg-info text-dark p-3 rounded">
+              bg-info
+            </div>
+          </div>
+          <div class="col-md-2 col-6">
+            <div class="bg-light text-dark p-3 rounded border">
+              bg-light
+            </div>
+          </div>
+          <div class="col-md-2 col-6">
+            <div class="bg-dark text-white p-3 rounded">
+              bg-dark
+            </div>
+          </div>
+          <div class="col-md-2 col-6">
+            <div class="bg-white text-dark p-3 rounded border">
+              bg-white
+            </div>
+          </div>
+          <div class="col-md-2 col-6">
+            <div class="bg-transparent text-dark p-3 rounded border">
+              bg-transparent
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

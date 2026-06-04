@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 12.1 - Margin & Padding Utilities</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+  <div class="container my-5">
+    <h2 class="text-center fw-bold mb-5">Exercise 12.1 - Margin & Padding Utilities</h2>
+
+    <!-- MARGIN UTILITIES -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="fw-bold text-primary mb-3">Margin Utilities</h5>
+
+        <!-- m-3 -->
+        <div class="m-3 p-2 bg-primary text-white rounded">
+          <code>m-3</code> — margin on ALL sides (1rem)
+        </div>
+
+        <!-- mt-4 -->
+        <div class="mt-4 p-2 bg-success text-white rounded">
+          <code>mt-4</code> — margin TOP only (1.5rem)
+        </div>
+
+        <!-- mb-4 -->
+        <div class="mb-4 p-2 bg-danger text-white rounded">
+          <code>mb-4</code> — margin BOTTOM only (1.5rem)
+        </div>
+
+        <!-- ms-5 -->
+        <div class="ms-5 p-2 bg-warning text-dark rounded">
+          <code>ms-5</code> — margin START/LEFT only (3rem)
+        </div>
+
+        <!-- me-5 -->
+        <div class="me-5 p-2 bg-info text-dark rounded">
+          <code>me-5</code> — margin END/RIGHT only (3rem)
+        </div>
+
+        <!-- mx-auto -->
+        <div class="mx-auto mt-3 p-2 bg-dark text-white rounded"
+             style="width: 300px;">
+          <code>mx-auto</code> — center horizontally
+        </div>
+
+        <!-- my-4 -->
+        <div class="my-4 p-2 bg-secondary text-white rounded">
+          <code>my-4</code> — margin TOP & BOTTOM (1.5rem)
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PADDING UTILITIES -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="fw-bold text-success mb-3">Padding Utilities</h5>
+
+        <!-- p-2 -->
+        <div class="p-2 bg-primary text-white rounded mb-3">
+          <code>p-2</code> — padding on ALL sides (0.5rem)
+        </div>
+
+        <!-- p-4 -->
+        <div class="p-4 bg-success text-white rounded mb-3">
+          <code>p-4</code> — padding on ALL sides (1.5rem)
+        </div>
+
+        <!-- py-5 -->
+        <div class="py-5 bg-danger text-white text-center rounded mb-3">
+          <code>py-5</code> — padding TOP & BOTTOM (3rem)
+        </div>
+
+        <!-- px-5 -->
+        <div class="px-5 p-3 bg-warning text-dark rounded mb-3">
+          <code>px-5</code> — padding LEFT & RIGHT (3rem)
+        </div>
+
+        <!-- pt-4 -->
+        <div class="pt-4 p-2 bg-info text-dark rounded mb-3">
+          <code>pt-4</code> — padding TOP only (1.5rem)
+        </div>
+
+        <!-- pb-4 -->
+        <div class="pb-4 p-2 bg-dark text-white rounded mb-3">
+          <code>pb-4</code> — padding BOTTOM only (1.5rem)
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SPACING SCALE REFERENCE -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="fw-bold text-danger mb-3">Spacing Scale Reference</h5>
+        <div class="table-responsive">
+          <table class="table table-bordered text-center">
+            <thead class="table-dark">
+              <tr>
+                <th>Class</th>
+                <th>Value</th>
+                <th>Size</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>m-0 / p-0</code></td>
+                <td>0</td>
+                <td>0px</td>
+              </tr>
+              <tr>
+                <td><code>m-1 / p-1</code></td>
+                <td>0.25rem</td>
+                <td>4px</td>
+              </tr>
+              <tr>
+                <td><code>m-2 / p-2</code></td>
+                <td>0.5rem</td>
+                <td>8px</td>
+              </tr>
+              <tr>
+                <td><code>m-3 / p-3</code></td>
+                <td>1rem</td>
+                <td>16px</td>
+              </tr>
+              <tr>
+                <td><code>m-4 / p-4</code></td>
+                <td>1.5rem</td>
+                <td>24px</td>
+              </tr>
+              <tr>
+                <td><code>m-5 / p-5</code></td>
+                <td>3rem</td>
+                <td>48px</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIRECTION REFERENCE -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="fw-bold text-dark mb-3">Direction Reference</h5>
+        <div class="table-responsive">
+          <table class="table table-bordered text-center">
+            <thead class="table-dark">
+              <tr>
+                <th>Shorthand</th>
+                <th>Meaning</th>
+                <th>Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><code>m / p</code></td>
+                <td>All sides</td><td>m-3, p-3</td></tr>
+              <tr><td><code>mt / pt</code></td>
+                <td>Top</td><td>mt-4, pt-4</td></tr>
+              <tr><td><code>mb / pb</code></td>
+                <td>Bottom</td><td>mb-4, pb-4</td></tr>
+              <tr><td><code>ms / ps</code></td>
+                <td>Left (Start)</td><td>ms-3, ps-3</td></tr>
+              <tr><td><code>me / pe</code></td>
+                <td>Right (End)</td><td>me-3, pe-3</td></tr>
+              <tr><td><code>mx / px</code></td>
+                <td>Left & Right</td><td>mx-3, px-3</td></tr>
+              <tr><td><code>my / py</code></td>
+                <td>Top & Bottom</td><td>my-3, py-3</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

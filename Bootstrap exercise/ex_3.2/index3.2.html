@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 3.2 - Container, Row & Col</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <style>
+    /* Color coding each section for clarity */
+    .box {
+      padding: 30px 15px;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .box-blue   { background-color: #0d6efd; }
+    .box-green  { background-color: #198754; }
+    .box-red    { background-color: #dc3545; }
+    .box-purple { background-color: #6f42c1; }
+    .box-orange { background-color: #fd7e14; }
+    .box-teal   { background-color: #20c997; }
+
+    .section-title {
+      background-color: #f8f9fa;
+      border-left: 5px solid #0d6efd;
+      padding: 10px 15px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+      <span class="navbar-brand">Exercise 3.2 - Responsive Layout</span>
+    </div>
+  </nav>
+
+  <!-- ========== SECTION 1: FULL WIDTH ========== -->
+  <div class="container mt-4">
+    <div class="section-title">Section 1: Full Width Column</div>
+    <div class="row">
+      <div class="col-12">
+        <div class="box box-blue">
+         Full
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== SECTION 2: TWO EQUAL COLUMNS ========== -->
+  <div class="container mt-2">
+    <div class="section-title">Section 2: Two Equal Columns</div>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="box box-green">
+          Two Equal Columns
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="box box-green">
+          Two Equal Columns
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== SECTION 3: THREE EQUAL COLUMNS ========== -->
+  <div class="container mt-2">
+    <div class="section-title">Section 3: Three Equal Columns</div>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="box box-red">
+          Three Equal Columns
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="box box-red">
+          Three Equal Columns
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="box box-red">
+          Three Equal Columns
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== SECTION 4: UNEQUAL COLUMNS (SIDEBAR LAYOUT) ========== -->
+  <div class="container mt-2">
+    <div class="section-title">Section 4: Unequal Columns — Sidebar Layout</div>
+    <div class="row">
+
+      <!-- Main Content -->
+      <div class="col-12 col-md-8">
+        <div class="box box-purple">
+          Unequal Columns — Main Content Area
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-12 col-md-4">
+        <div class="box box-purple">
+          Unequal Columns — Sidebar
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========== SECTION 5: FOUR COLUMNS ========== -->
+  <div class="container mt-2">
+    <div class="section-title">Section 5: Four Columns</div>
+    <div class="row">
+      <div class="col-6 col-lg-3">
+        <div class="box box-orange">1</div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="box box-orange">2</div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="box box-orange">3</div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="box box-orange">4</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== SECTION 6: FOOTER ROW ========== -->
+  <div class="container mt-2 mb-5">
+    <div class="section-title">Section 6: Footer Style Row</div>
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="box box-teal">About Us</div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="box box-teal">Quick Links</div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="box box-teal">Contact</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

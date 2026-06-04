@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 14.1 - Display Utilities</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-dark bg-dark px-4 py-3">
+    <span class="navbar-brand fw-bold">📱 Display Utilities</span>
+
+    <!-- Show only on mobile -->
+    <span class="d-block d-md-none badge bg-warning text-dark">
+      📱 Mobile View
+    </span>
+
+    <!-- Show only on tablet -->
+    <span class="d-none d-md-block d-lg-none badge bg-success">
+      💻 Tablet View
+    </span>
+
+    <!-- Show only on desktop -->
+    <span class="d-none d-lg-block badge bg-primary">
+      🖥️ Desktop View
+    </span>
+
+  </nav>
+
+  <div class="container my-5">
+    <h2 class="fw-bold text-center mb-5">
+      Exercise 14.1 - Hide / Show on Screen Sizes
+    </h2>
+
+    <!-- SECTION 1 — d-none d-md-block -->
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header bg-primary text-white py-3">
+        <h6 class="fw-bold mb-0">
+          d-none d-md-block — Hidden on Mobile, Visible on Tablet+
+        </h6>
+      </div>
+      <div class="card-body">
+
+        <!-- Hidden on mobile, shown on md and above -->
+        <div class="d-none d-md-block bg-primary text-white 
+                    p-3 rounded mb-3">
+          ✅ I am visible on <strong>Tablet (md) and above</strong>.
+          Resize to mobile to hide me!
+        </div>
+
+        <!-- Always visible — for reference -->
+        <div class="bg-light border p-3 rounded">
+          👆 The blue box above is hidden on mobile screens
+          (below 768px). Resize the browser to see it disappear!
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SECTION 2 — d-lg-flex -->
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header bg-success text-white py-3">
+        <h6 class="fw-bold mb-0">
+          d-none d-lg-flex — Hidden until Large Screen
+        </h6>
+      </div>
+      <div class="card-body">
+
+        <!-- Hidden until lg, then flex -->
+        <div class="d-none d-lg-flex gap-3 align-items-center 
+                    bg-success text-white p-3 rounded mb-3">
+          <span style="font-size:2rem;">🖥️</span>
+          <div>
+            <strong>Flex Layout — Large Screen Only</strong>
+            <p class="mb-0">
+              This section uses d-lg-flex — it only appears
+              as a flex row on large (lg) screens and above!
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-light border p-3 rounded">
+          👆 The green flex box above only shows on
+          <strong>large screens (1024px+)</strong>.
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SECTION 3 — d-block d-md-none (Mobile Only) -->
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header bg-warning text-dark py-3">
+        <h6 class="fw-bold mb-0">
+          d-block d-md-none — Visible ONLY on Mobile
+        </h6>
+      </div>
+      <div class="card-body">
+
+        <div class="d-block d-md-none bg-warning text-dark 
+                    p-3 rounded mb-3">
+          📱 I am <strong>only visible on mobile</strong>
+          (below 768px). Hidden on tablet and desktop!
+        </div>
+
+        <div class="bg-light border p-3 rounded">
+          👆 The yellow box above is only visible on
+          <strong>mobile screens (below 768px)</strong>.
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SECTION 4 — d-none d-md-block d-lg-none (Tablet Only) -->
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header bg-info text-dark py-3">
+        <h6 class="fw-bold mb-0">
+          d-none d-md-block d-lg-none — Tablet ONLY
+        </h6>
+      </div>
+      <div class="card-body">
+
+        <div class="d-none d-md-block d-lg-none bg-info 
+                    text-dark p-3 rounded mb-3">
+          💻 I am <strong>only visible on tablet</strong>
+          (768px–1024px). Hidden on mobile and desktop!
+        </div>
+
+        <div class="bg-light border p-3 rounded">
+          👆 The cyan box above is only visible on
+          <strong>tablet screens (768px–1024px)</strong>.
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SECTION 5 — Comparison Table -->
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header bg-dark text-white py-3">
+        <h6 class="fw-bold mb-0">
+          📊 Display Utility Reference Table
+        </h6>
+      </div>
+      <div class="card-body p-0">
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover mb-0">
+            <thead class="table-dark text-center">
+              <tr>
+                <th>Class Combination</th>
+                <th>📱 Mobile</th>
+                <th>💻 Tablet</th>
+                <th>🖥️ Desktop</th>
+              </tr>
+            </thead>
+            <tbody class="text-center">
+              <tr>
+                <td><code>d-none d-md-block</code></td>
+                <td class="text-danger">Hidden</td>
+                <td class="text-success">Visible</td>
+                <td class="text-success">Visible</td>
+              </tr>
+              <tr>
+                <td><code>d-none d-lg-block</code></td>
+                <td class="text-danger">Hidden</td>
+                <td class="text-danger">Hidden</td>
+                <td class="text-success">Visible</td>
+              </tr>
+              <tr>
+                <td><code>d-block d-md-none</code></td>
+                <td class="text-success">Visible</td>
+                <td class="text-danger">Hidden</td>
+                <td class="text-danger">Hidden</td>
+              </tr>
+              <tr>
+                <td><code>d-none d-md-block d-lg-none</code></td>
+                <td class="text-danger">Hidden</td>
+                <td class="text-success">Visible</td>
+                <td class="text-danger">Hidden</td>
+              </tr>
+              <tr>
+                <td><code>d-none d-lg-flex</code></td>
+                <td class="text-danger">Hidden</td>
+                <td class="text-danger">Hidden</td>
+                <td class="text-success">Flex</td>
+              </tr>
+              <tr>
+                <td><code>d-block</code></td>
+                <td class="text-success">Visible</td>
+                <td class="text-success">Visible</td>
+                <td class="text-success">Visible</td>
+              </tr>
+              <tr>
+                <td><code>d-none</code></td>
+                <td class="text-danger">Hidden</td>
+                <td class="text-danger">Hidden</td>
+                <td class="text-danger">Hidden</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

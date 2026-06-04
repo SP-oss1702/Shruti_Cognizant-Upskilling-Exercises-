@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 16.1 - Fixed Footer</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-dark bg-dark px-4 py-3">
+    <span class="navbar-brand fw-bold">📌 Positioning</span>
+  </nav>
+
+  <!-- PAGE CONTENT -->
+  <div class="container my-5 pb-5">
+    <h2 class="fw-bold text-center mb-4">
+      Exercise 16.1 - Fixed Footer
+    </h2>
+
+    <div class="alert alert-info">
+      📌 The <strong>dark footer</strong> at the bottom of this
+      page is <strong>fixed</strong> — it stays visible even
+      when you scroll down!
+    </div>
+
+    <!-- Dummy content to allow scrolling -->
+    <div class="card shadow-sm mb-3 p-4">
+      <h5 class="fw-bold">What is position-fixed?</h5>
+      <p>
+        The <code>position-fixed</code> class positions an element
+        relative to the <strong>viewport</strong>. It stays in
+        place even when the page is scrolled.
+      </p>
+    </div>
+
+    <div class="card shadow-sm mb-3 p-4">
+      <h5 class="fw-bold">Classes Used</h5>
+      <ul>
+        <li><code>position-fixed</code> — fixes the element</li>
+        <li><code>bottom-0</code> — sticks to the bottom</li>
+        <li><code>start-0</code> — starts from the left edge</li>
+        <li><code>end-0</code> — stretches to the right edge</li>
+        <li><code>w-100</code> — full width</li>
+      </ul>
+    </div>
+
+    <div class="card shadow-sm mb-3 p-4">
+      <h5 class="fw-bold">Other Fixed Positions</h5>
+      <ul>
+        <li>
+          <code>position-fixed top-0</code> — Fixed to the top
+        </li>
+        <li>
+          <code>position-fixed bottom-0</code> — Fixed to the
+          bottom
+        </li>
+        <li>
+          <code>position-fixed top-0 end-0</code> — Fixed
+          top-right corner
+        </li>
+        <li>
+          <code>position-sticky top-0</code> — Sticky on scroll
+        </li>
+      </ul>
+    </div>
+
+    <div class="card shadow-sm mb-3 p-4">
+      <h5 class="fw-bold">Scroll down to see the footer stays!</h5>
+      <p class="text-muted">
+        Add more content here to make the page scrollable...
+      </p>
+    </div>
+
+    <!-- Extra scroll space -->
+    <div style="height: 400px;" 
+         class="bg-white rounded p-4 shadow-sm 
+                d-flex align-items-center justify-content-center">
+      <p class="text-muted fs-5">
+        ↓ Keep scrolling — footer stays fixed at the bottom!
+      </p>
+    </div>
+
+  </div>
+
+  <!-- FIXED FOOTER -->
+  <footer class="position-fixed bottom-0 start-0 end-0 
+                 bg-dark text-white py-3 shadow-lg">
+    <div class="container d-flex justify-content-between 
+                align-items-center">
+      <span class="fw-bold">© 2025 MyWebsite</span>
+      <div class="d-flex gap-3">
+        <a href="#" class="text-white text-decoration-none">
+          Privacy
+        </a>
+        <a href="#" class="text-white text-decoration-none">
+          Terms
+        </a>
+        <a href="#" class="text-white text-decoration-none">
+          Contact
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

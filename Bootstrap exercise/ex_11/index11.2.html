@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 11.2 - Media Object Layout</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+  <div class="container my-5">
+    <h2 class="text-center fw-bold mb-5">Exercise 11.2 - Media Object Layout</h2>
+
+    <!-- MEDIA OBJECT 1 — Image Left -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="fw-bold text-primary mb-3">Image Aligned Left</h5>
+
+        <div class="d-flex align-items-start gap-3">
+          <img src="https://i.pravatar.cc/80?img=1"
+               class="rounded-circle" 
+               alt="User" width="80" height="80">
+          <div>
+            <h5 class="fw-bold mb-1">John Smith</h5>
+            <p class="text-muted mb-1">Web Developer · Chennai</p>
+            <p class="mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Bootstrap makes it easy to align images and content
+              side by side using flexbox utilities.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- MEDIA OBJECT 2 — Image Right -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="fw-bold text-success mb-3">Image Aligned Right</h5>
+
+        <div class="d-flex align-items-start gap-3">
+          <div>
+            <h5 class="fw-bold mb-1">Sarah Johnson</h5>
+            <p class="text-muted mb-1">UI/UX Designer · Mumbai</p>
+            <p class="mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              The image is now on the right side of the content
+              by simply changing the order in HTML.
+            </p>
+          </div>
+          <img src="https://i.pravatar.cc/80?img=5"
+               class="rounded-circle ms-auto"
+               alt="User" width="80" height="80">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- MEDIA OBJECT 3 — Top Aligned -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="fw-bold text-danger mb-3">Image Top Aligned</h5>
+
+        <div class="d-flex align-items-start gap-3">
+          <img src="https://i.pravatar.cc/80?img=8"
+               class="rounded" 
+               alt="User" width="80" height="80">
+          <div>
+            <h5 class="fw-bold mb-1">Mike Williams</h5>
+            <p class="text-muted mb-1">Data Scientist · Bangalore</p>
+            <p class="mb-0">
+              Using <strong>align-items-start</strong> keeps the image
+              at the top even when the text content is long.
+              This is the most common media object layout used in
+              comment sections, blog posts, and social media feeds.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- MEDIA OBJECT 4 — Center Aligned -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="fw-bold text-warning mb-3">Image Center Aligned</h5>
+
+        <div class="d-flex align-items-center gap-3">
+          <img src="https://i.pravatar.cc/80?img=12"
+               class="rounded-circle"
+               alt="User" width="80" height="80">
+          <div>
+            <h5 class="fw-bold mb-1">Emily Davis</h5>
+            <p class="text-muted mb-1">Graphic Designer · Delhi</p>
+            <p class="mb-0">
+              Using <strong>align-items-center</strong> keeps the image
+              vertically centered relative to the text content.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- NESTED MEDIA OBJECT (Comments) -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="fw-bold text-dark mb-3">Nested Media — Comment Section</h5>
+
+        <!-- Comment 1 -->
+        <div class="d-flex align-items-start gap-3 mb-4">
+          <img src="https://i.pravatar.cc/60?img=1"
+               class="rounded-circle"
+               alt="User" width="60" height="60">
+          <div class="flex-grow-1">
+            <h6 class="fw-bold mb-1">John Smith
+              <small class="text-muted fw-normal">· 2 hours ago</small>
+            </h6>
+            <p class="mb-2">
+              Great article! Really helpful for beginners learning Bootstrap.
+            </p>
+
+            <!-- Nested Reply -->
+            <div class="d-flex align-items-start gap-3 mt-3 
+                        ps-3 border-start border-primary border-3">
+              <img src="https://i.pravatar.cc/50?img=5"
+                   class="rounded-circle"
+                   alt="User" width="50" height="50">
+              <div>
+                <h6 class="fw-bold mb-1">Sarah Johnson
+                  <small class="text-muted fw-normal">· 1 hour ago</small>
+                </h6>
+                <p class="mb-0">
+                  Thanks John! Glad it helped you out 😊
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Comment 2 -->
+        <div class="d-flex align-items-start gap-3">
+          <img src="https://i.pravatar.cc/60?img=8"
+               class="rounded-circle"
+               alt="User" width="60" height="60">
+          <div>
+            <h6 class="fw-bold mb-1">Mike Williams
+              <small class="text-muted fw-normal">· 30 mins ago</small>
+            </h6>
+            <p class="mb-0">
+              Bootstrap's flexbox utilities make media objects so much easier!
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

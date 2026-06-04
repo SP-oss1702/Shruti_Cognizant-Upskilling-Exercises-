@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Grid</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <style>
+    /* Just for visual clarity */
+    .col-12, .col-md-6, .col-lg-4 {
+      margin-bottom: 20px;
+    }
+
+    .box {
+      background-color: #0d6efd;
+      color: white;
+      padding: 40px 20px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-5">
+
+    <h1 class="text-center mb-2">Responsive Grid</h1>
+    <p class="text-center text-muted mb-4">
+    </p>
+
+    <!-- THE GRID -->
+    <div class="row">
+
+      <!-- Column 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="box">Column 1</div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="box">Column 2</div>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="box">Column 3</div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

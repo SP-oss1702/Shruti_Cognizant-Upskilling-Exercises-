@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 14.2 - Responsive Sidebar</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-dark bg-dark px-4 py-3">
+    <span class="navbar-brand fw-bold">📂 MySite</span>
+
+    <!-- Mobile menu button — only on mobile -->
+    <button class="btn btn-outline-light btn-sm d-md-none"
+            type="button" data-bs-toggle="collapse"
+            data-bs-target="#mobileSidebar">
+      ☰ Menu
+    </button>
+
+  </nav>
+
+  <!-- MOBILE SIDEBAR (collapse — mobile only) -->
+  <div class="collapse d-md-none bg-dark text-white" 
+       id="mobileSidebar">
+    <div class="p-3">
+      <h6 class="text-white-50 text-uppercase mb-3">Navigation</h6>
+      <ul class="list-unstyled">
+        <li class="mb-2">
+          <a href="#" class="text-white text-decoration-none">
+            🏠 Home
+          </a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="text-white text-decoration-none">
+            📊 Dashboard
+          </a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="text-white text-decoration-none">
+            👤 Profile
+          </a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="text-white text-decoration-none">
+            ⚙️ Settings
+          </a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="text-white text-decoration-none">
+            🚪 Logout
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- MAIN LAYOUT -->
+  <div class="container-fluid">
+    <div class="row min-vh-100">
+
+      <!-- SIDEBAR — hidden on mobile, visible on md+ -->
+      <div class="col-md-3 col-lg-2 d-none d-md-block 
+                  bg-dark text-white p-0">
+        <div class="p-3 sticky-top" style="top: 0;">
+
+          <!-- USER INFO -->
+          <div class="text-center py-4 border-bottom 
+                      border-secondary mb-3">
+            <img src="https://i.pravatar.cc/80?img=1"
+                 class="rounded-circle mb-2"
+                 width="70" height="70" alt="User">
+            <h6 class="fw-bold mb-0">John Smith</h6>
+            <small class="text-white-50">Administrator</small>
+          </div>
+
+          <!-- NAV LINKS -->
+          <h6 class="text-white-50 text-uppercase 
+                     mb-3 small">Main Menu</h6>
+          <ul class="list-unstyled">
+            <li class="mb-1">
+              <a href="#"
+                 class="d-flex align-items-center gap-2 
+                        text-white text-decoration-none 
+                        p-2 rounded active bg-primary">
+                🏠 <span>Home</span>
+              </a>
+            </li>
+            <li class="mb-1">
+              <a href="#"
+                 class="d-flex align-items-center gap-2 
+                        text-white text-decoration-none 
+                        p-2 rounded">
+                📊 <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="mb-1">
+              <a href="#"
+                 class="d-flex align-items-center gap-2 
+                        text-white text-decoration-none 
+                        p-2 rounded">
+                👤 <span>Profile</span>
+              </a>
+            </li>
+            <li class="mb-1">
+              <a href="#"
+                 class="d-flex align-items-center gap-2 
+                        text-white text-decoration-none 
+                        p-2 rounded">
+                📁 <span>Projects</span>
+              </a>
+            </li>
+            <li class="mb-1">
+              <a href="#"
+                 class="d-flex align-items-center gap-2 
+                        text-white text-decoration-none 
+                        p-2 rounded">
+                ✉️ <span>Messages</span>
+              </a>
+            </li>
+          </ul>
+
+          <hr class="border-secondary">
+
+          <h6 class="text-white-50 text-uppercase 
+                     mb-3 small">Settings</h6>
+          <ul class="list-unstyled">
+            <li class="mb-1">
+              <a href="#"
+                 class="d-flex align-items-center gap-2 
+                        text-white text-decoration-none 
+                        p-2 rounded">
+                ⚙️ <span>Settings</span>
+              </a>
+            </li>
+            <li class="mb-1">
+              <a href="#"
+                 class="d-flex align-items-center gap-2 
+                        text-danger text-decoration-none 
+                        p-2 rounded">
+                🚪 <span>Logout</span>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+      <!-- MAIN CONTENT -->
+      <div class="col-md-9 col-lg-10 p-4">
+
+        <h4 class="fw-bold mb-4">Welcome Back, John! 👋</h4>
+
+        <!-- MOBILE NOTICE -->
+        <div class="alert alert-warning d-md-none">
+          📱 <strong>Mobile View:</strong> Sidebar is hidden.
+          Use the <strong>☰ Menu</strong> button in the
+          navbar to access navigation!
+        </div>
+
+        <!-- TABLET/DESKTOP NOTICE -->
+        <div class="alert alert-success d-none d-md-block">
+          💻 <strong>Tablet/Desktop View:</strong> Sidebar is
+          visible on the left using
+          <code>d-none d-md-block</code>!
+        </div>
+
+        <!-- STAT CARDS -->
+        <div class="row g-3 mb-4">
+          <div class="col-6 col-lg-3">
+            <div class="card bg-primary text-white text-center p-3">
+              <h4 class="fw-bold">128</h4>
+              <small>Projects</small>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="card bg-success text-white text-center p-3">
+              <h4 class="fw-bold">34</h4>
+              <small>Completed</small>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="card bg-warning text-dark text-center p-3">
+              <h4 class="fw-bold">12</h4>
+              <small>Pending</small>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="card bg-danger text-white text-center p-3">
+              <h4 class="fw-bold">5</h4>
+              <small>Overdue</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTENT AREA -->
+        <div class="card shadow-sm">
+          <div class="card-header bg-dark text-white py-3">
+            <h6 class="fw-bold mb-0">📋 Recent Activity</h6>
+          </div>
+          <div class="card-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex 
+                          justify-content-between">
+                <span>✅ Project Alpha completed</span>
+                <small class="text-muted">2 hrs ago</small>
+              </li>
+              <li class="list-group-item d-flex 
+                          justify-content-between">
+                <span>📁 New project created</span>
+                <small class="text-muted">5 hrs ago</small>
+              </li>
+              <li class="list-group-item d-flex 
+                          justify-content-between">
+                <span>✉️ Message from Sarah</span>
+                <small class="text-muted">Yesterday</small>
+              </li>
+              <li class="list-group-item d-flex 
+                          justify-content-between">
+                <span>⚙️ Settings updated</span>
+                <small class="text-muted">2 days ago</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

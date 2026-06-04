@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 19.2 - Custom Variables</title>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+  <div class="container mt-4">
+
+    <h4 class="text-center mb-4">Exercise 19.2 — Custom Colors + Border Radius</h4>
+
+    <!-- Hero -->
+    <div class="hero-section">
+      <h1>Bootstrap Customized!</h1>
+      <p class="lead">Primary = Hot Pink | Secondary = Teal</p>
+      <a href="#" class="btn btn-light btn-lg mt-2">Get Started</a>
+    </div>
+
+    <!-- Buttons -->
+    <div class="text-center mb-4">
+      <button class="btn btn-primary me-2">Primary (Pink)</button>
+      <button class="btn btn-secondary me-2">Secondary (Teal)</button>
+      <button class="btn btn-success me-2">Success</button>
+      <button class="btn btn-danger">Danger</button>
+    </div>
+
+    <!-- Cards -->
+    <div class="row mb-4">
+      <div class="col-12 col-md-4">
+        <div class="custom-card">
+          <h5>$primary Changed</h5>
+          <p class="text-muted">Hot Pink #e91e63</p>
+          <button class="btn btn-primary btn-sm">Pink!</button>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="custom-card">
+          <h5>$border-radius Changed</h5>
+          <p class="text-muted">Border radius is now 20px</p>
+          <button class="btn btn-secondary btn-sm">Rounded!</button>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="custom-card">
+          <h5>$secondary Changed</h5>
+          <p class="text-muted">Teal #009688</p>
+          <button class="btn btn-success btn-sm">Success!</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Alerts -->
+    <div class="alert alert-primary">
+      ✅ <strong>$primary</strong> → Hot Pink via _variables.scss
+    </div>
+    <div class="alert alert-secondary">
+      ✅ <strong>$secondary</strong> → Teal via _variables.scss
+    </div>
+    <div class="alert alert-success">
+      ✅ <strong>$border-radius</strong> → 20px rounded corners!
+    </div>
+
+  </div>
+
+</body>
+</html>

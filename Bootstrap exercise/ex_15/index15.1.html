@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 15.1 - Border Utilities</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+  <div class="container my-5">
+    <h2 class="text-center fw-bold mb-5">
+      Exercise 15.1 - Border Utilities on Images
+    </h2>
+
+    <!-- BASIC BORDERS -->
+    <div class="card shadow-sm mb-4">
+      <div class="card-header bg-primary text-white py-3">
+        <h6 class="fw-bold mb-0">Basic Border Classes</h6>
+      </div>
+      <div class="card-body">
+        <div class="row g-4 text-center">
+
+          <!-- No Border -->
+          <div class="col-6 col-md-3">
+            <img src="https://i.pravatar.cc/150?img=1"
+                 width="120" height="120" alt="No Border">
+            <p class="mt-2 text-muted small">No Border</p>
+          </div>
+
+          <!-- border -->
+          <div class="col-6 col-md-3">
+            <img src="https://i.pravatar.cc/150?img=2"
+                 class="border"
+                 width="120" height="120" alt="border">
+            <p class="mt-2 small"><code>border</code></p>
+          </div>
+
+          <!-- border border-primary -->
+          <div class="col-6 col-md-3">
+            <img src="https://i.pravatar.cc/150?img=3"
+                 class="border border-primary"
+                 width="120" height="120" alt="border-primary">
+            <p class="mt-2 small">
+              <code>border border-primary</code>
+            </p>
+          </div>
+
+          <!-- border border-danger -->
+          <div class="col-6 col-md-3">
+            <img src="https://i.pravatar.cc/150?img=4"
+                 class="border border-danger"
+                 width="120" height="120" alt="border-danger">
+            <p class="mt-2 small">
+              <code>border border-danger</code>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- BORDER COLORS -->
+    <div class="card shadow-sm mb-4">
+      <div class="card-header bg-success text-white py-3">
+        <h6 class="fw-bold mb-0">Border Color Utilities</h6>
+      </div>
+      <div class="card-body">
+        <div class="row g-4 text-center">
+
+          <div class="col-6 col-md-2">
+            <img src="https://i.pravatar.cc/150?img=5"
+                 class="border border-3 border-primary"
+                 width="100" height="100" alt="">
+            <p class="mt-2 small"><code>border-primary</code></p>
+          </div>
+
+          <div class="col-6 col-md-2">
+            <img src="https://i.pravatar.cc/150?img=6"
+                 class="border border-3 border-secondary"
+                 width="100" height="100" alt="">
+            <p class="mt-2 small">
+              <code>border-secondary</code>
+            </p>
+          </div>
+
+          <div class="col-6 col-md-2">
+            <img src="https://i.pravatar.cc/150?img=7"
+                 class="border border-3 border-success"
+                 width="100" height="100" alt="">
+            <p class="mt-2 small"><code>border-success</code></p>
+          </div>
+
+          <div class="col-6 col-md-2">
+            <img src="https://i.pravatar.cc/150?img=8"
+                 class="border border-3 border-danger"
+                 width="100" height="100" alt="">
+            <p class="mt-2 small"><code>border-danger</code></p>
+          </div>
+
+          <div class="col-6 col-md-2">
+            <img src="https://i.pravatar.cc/150?img=9"
+                 class="border border-3 border-warning"
+                 width="100" height="100" alt="">
+            <p class="mt-2 small"><code>border-warning</code></p>
+          </div>
+
+          <div class="col-6 col-md-2">
+            <img src="https://i.pravatar.cc/150?img=10"
+                 class="border border-3 border-dark"
+                 width="100" height="100" alt="">
+            <p class="mt-2 small"><code>border-dark</code></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- BORDER WIDTH -->
+    <div class="card shadow-sm mb-4">
+      <div class="card-header bg-warning text-dark py-3">
+        <h6 class="fw-bold mb-0">Border Width Utilities</h6>
+      </div>
+      <div class="card-body">
+        <div class="row g-4 text-center align-items-end">
+
+          <div class="col-6 col-md-3">
+            <img src="https://i.pravatar.cc/150?img=11"
+                 class="border border-1 border-primary"
+                 width="110" height="110" alt="">
+            <p class="mt-2 small"><code>border-1</code> (1px)</p>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <img src="https://i.pravatar.cc/150?img=12"
+                 class="border border-2 border-primary"
+                 width="110" height="110" alt="">
+            <p class="mt-2 small"><code>border-2</code> (2px)</p>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <img src="https://i.pravatar.cc/150?img=13"
+                 class="border border-3 border-primary"
+                 width="110" height="110" alt="">
+            <p class="mt-2 small"><code>border-3</code> (3px)</p>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <img src="https://i.pravatar.cc/150?img=14"
+                 class="border border-5 border-primary"
+                 width="110" height="110" alt="">
+            <p class="mt-2 small"><code>border-5</code> (5px)</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ROUNDED UTILITIES -->
+    <div class="card shadow-sm mb-4">
+      <div class="card-header bg-danger text-white py-3">
+        <h6 class="fw-bold mb-0">Rounded Utilities</h6>
+      </div>
+      <div class="card-body">
+        <div class="row g-4 text-center">
+
+          <div class="col-6 col-md-2">
+            <img src="https://i.pravatar.cc/150?img=15"
+                 class="border border-3 border-danger"
+                 width="110" height="110" alt="">
+            <p class="mt-2 small">No Rounded</p>
+          </div>
+
+          <div class="col-6 col-md-2">
+            <img src="https://i.pravatar.cc/150?img=16"
+                 class="border border-3 border-danger rounded"
+                 width="110" height="110" alt="">
+            <p class="mt-2 small"><code>rounded</code></p>
+          </div>
+
+          <div class="col-6 col-md-2">
+            <img src="https://i.pravatar.cc/150?img=17"
+                 class="border border-3 border-danger rounded-3"
+                 width="110" height="110" alt="">
+            <p class="mt-2 small"><code>rounded-3</code></p>
+          </div>
+
+          <div class="col-6 col-md-2">
+            <img src="https://i.pravatar.cc/150?img=18"
+                 class="border border-3 border-danger rounded-4"
+                 width="110" height="110" alt="">
+            <p class="mt-2 small"><code>rounded-4</code></p>
+          </div>
+
+          <div class="col-6 col-md-2">
+            <img src="https://i.pravatar.cc/150?img=19"
+                 class="border border-3 border-danger rounded-5"
+                 width="110" height="110" alt="">
+            <p class="mt-2 small"><code>rounded-5</code></p>
+          </div>
+
+          <!-- rounded-circle — STAR OF THE EXERCISE -->
+          <div class="col-6 col-md-2">
+            <img src="https://i.pravatar.cc/150?img=20"
+                 class="border border-3 border-danger 
+                        rounded-circle"
+                 width="110" height="110" alt="">
+            <p class="mt-2 small">
+              <code>rounded-circle</code>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- PROFILE AVATARS — PRACTICAL EXAMPLE -->
+    <div class="card shadow-sm mb-4">
+      <div class="card-header bg-dark text-white py-3">
+        <h6 class="fw-bold mb-0">
+          ✅ Practical Example — Profile Avatars
+        </h6>
+      </div>
+      <div class="card-body">
+        <div class="row g-4 text-center">
+
+          <div class="col-6 col-md-3">
+            <img src="https://i.pravatar.cc/150?img=1"
+                 class="border border-3 border-primary 
+                        rounded-circle"
+                 width="100" height="100" alt="User">
+            <p class="mt-2 fw-bold">John Smith</p>
+            <small class="text-muted">Developer</small>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <img src="https://i.pravatar.cc/150?img=5"
+                 class="border border-3 border-success 
+                        rounded-circle"
+                 width="100" height="100" alt="User">
+            <p class="mt-2 fw-bold">Sarah Johnson</p>
+            <small class="text-muted">Designer</small>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <img src="https://i.pravatar.cc/150?img=8"
+                 class="border border-3 border-warning 
+                        rounded-circle"
+                 width="100" height="100" alt="User">
+            <p class="mt-2 fw-bold">Mike Williams</p>
+            <small class="text-muted">Manager</small>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <img src="https://i.pravatar.cc/150?img=12"
+                 class="border border-5 border-danger 
+                        rounded-circle"
+                 width="100" height="100" alt="User">
+            <p class="mt-2 fw-bold">Emily Davis</p>
+            <small class="text-muted">Analyst</small>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

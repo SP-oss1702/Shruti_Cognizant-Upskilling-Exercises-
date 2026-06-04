@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 9.2 - Button Groups & Toggle Buttons</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="container my-5">
+    <h2 class="text-center fw-bold mb-5">Exercise 9.2 - Button Groups & Toggle Buttons</h2>
+
+    <!-- BASIC BUTTON GROUP -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="fw-bold text-primary mb-3">Basic Button Group</h5>
+        <div class="btn-group" role="group">
+          <button class="btn btn-primary">Left</button>
+          <button class="btn btn-primary">Middle</button>
+          <button class="btn btn-primary">Right</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- OUTLINE BUTTON GROUP -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="fw-bold text-success mb-3">Outline Button Group</h5>
+        <div class="btn-group" role="group">
+          <button class="btn btn-outline-success">HTML</button>
+          <button class="btn btn-outline-success">CSS</button>
+          <button class="btn btn-outline-success">JavaScript</button>
+          <button class="btn btn-outline-success">Bootstrap</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- BUTTON GROUP SIZES -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="fw-bold text-danger mb-3">Button Group Sizes</h5>
+        <div class="btn-group btn-group-lg mb-3 d-block">
+          <button class="btn btn-danger">Large</button>
+          <button class="btn btn-danger">Large</button>
+          <button class="btn btn-danger">Large</button>
+        </div>
+        <div class="btn-group mb-3 d-block">
+          <button class="btn btn-danger">Default</button>
+          <button class="btn btn-danger">Default</button>
+          <button class="btn btn-danger">Default</button>
+        </div>
+        <div class="btn-group btn-group-sm d-block">
+          <button class="btn btn-danger">Small</button>
+          <button class="btn btn-danger">Small</button>
+          <button class="btn btn-danger">Small</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- VERTICAL BUTTON GROUP -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="fw-bold text-warning mb-3">Vertical Button Group</h5>
+        <div class="btn-group-vertical" role="group">
+          <button class="btn btn-outline-warning">Top</button>
+          <button class="btn btn-outline-warning">Middle</button>
+          <button class="btn btn-outline-warning">Bottom</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX TOGGLE BUTTONS -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="fw-bold text-info mb-3">Checkbox Toggle Buttons</h5>
+        <div class="btn-group" role="group">
+
+          <input type="checkbox" class="btn-check" id="sports" autocomplete="off">
+          <label class="btn btn-outline-info" for="sports">⚽ Sports</label>
+
+          <input type="checkbox" class="btn-check" id="music" autocomplete="off">
+          <label class="btn btn-outline-info" for="music">🎵 Music</label>
+
+          <input type="checkbox" class="btn-check" id="travel" autocomplete="off">
+          <label class="btn btn-outline-info" for="travel">✈️ Travel</label>
+
+          <input type="checkbox" class="btn-check" id="coding" autocomplete="off">
+          <label class="btn btn-outline-info" for="coding">💻 Coding</label>
+
+        </div>
+        <p class="text-muted mt-2">Click to toggle — multiple selections allowed!</p>
+      </div>
+    </div>
+
+    <!-- RADIO TOGGLE BUTTONS -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="fw-bold text-dark mb-3">Radio Toggle Buttons</h5>
+        <div class="btn-group" role="group">
+
+          <input type="radio" class="btn-check" name="size" id="small" autocomplete="off">
+          <label class="btn btn-outline-dark" for="small">Small</label>
+
+          <input type="radio" class="btn-check" name="size" id="medium" 
+                 autocomplete="off" checked>
+          <label class="btn btn-outline-dark" for="medium">Medium</label>
+
+          <input type="radio" class="btn-check" name="size" id="large" autocomplete="off">
+          <label class="btn btn-outline-dark" for="large">Large</label>
+
+        </div>
+        <p class="text-muted mt-2">Click to toggle — only one selection allowed!</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

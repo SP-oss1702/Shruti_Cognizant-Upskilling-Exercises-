@@ -1,0 +1,37 @@
+// Import Bootstrap with custom variables
+@use "../node_modules/bootstrap/scss/bootstrap" with (
+  $primary:          #e91e63,
+  $secondary:        #009688,
+  $success:          #8bc34a,
+  $danger:           #ff5722,
+  $border-radius:    20px,
+  $border-radius-sm: 10px,
+  $border-radius-lg: 30px,
+  $body-bg:          #f8f0fc
+);
+
+// Custom styles
+.hero-section {
+  background: linear-gradient(135deg, #e91e63, #009688);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.custom-card {
+  border: none;
+  border-radius: 20px;
+  padding: 25px;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+.custom-card h5 {
+  color: #e91e63;
+  font-weight: 700;
+  border-left: 4px solid #e91e63;
+  padding-left: 10px;
+}

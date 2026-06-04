@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 17.2 - Icon Buttons</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href=
+"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-light">
+
+  <div class="container my-5">
+    <h2 class="text-center fw-bold mb-5">
+      Exercise 17.2 - Icon-Only Buttons
+    </h2>
+
+    <!-- TEXT vs ICON BUTTONS -->
+    <div class="card shadow-sm mb-4">
+      <div class="card-header bg-primary text-white py-3">
+        <h6 class="fw-bold mb-0">
+          Text Buttons → Icon Buttons
+        </h6>
+      </div>
+      <div class="card-body">
+        <div class="row g-4">
+
+          <!-- Text Buttons -->
+          <div class="col-md-6">
+            <h6 class="text-muted mb-3">Before — Text Buttons</h6>
+            <div class="d-flex flex-wrap gap-2">
+              <button class="btn btn-primary">Edit</button>
+              <button class="btn btn-danger">Delete</button>
+              <button class="btn btn-success">Save</button>
+              <button class="btn btn-warning">Search</button>
+              <button class="btn btn-dark">Download</button>
+              <button class="btn btn-info">Share</button>
+            </div>
+          </div>
+
+          <!-- Icon Buttons -->
+          <div class="col-md-6">
+            <h6 class="text-muted mb-3">After — Icon Buttons</h6>
+            <div class="d-flex flex-wrap gap-2">
+              <button class="btn btn-primary rounded-circle"
+                      style="width:42px; height:42px;"
+                      title="Edit">
+                <i class="bi bi-pencil-fill"></i>
+              </button>
+              <button class="btn btn-danger rounded-circle"
+                      style="width:42px; height:42px;"
+                      title="Delete">
+                <i class="bi bi-trash-fill"></i>
+              </button>
+              <button class="btn btn-success rounded-circle"
+                      style="width:42px; height:42px;"
+                      title="Save">
+                <i class="bi bi-floppy-fill"></i>
+              </button>
+              <button class="btn btn-warning rounded-circle"
+                      style="width:42px; height:42px;"
+                      title="Search">
+                <i class="bi bi-search"></i>
+              </button>
+              <button class="btn btn-dark rounded-circle"
+                      style="width:42px; height:42px;"
+                      title="Download">
+                <i class="bi bi-download"></i>
+              </button>
+              <button class="btn btn-info rounded-circle"
+                      style="width:42px; height:42px;"
+                      title="Share">
+                <i class="bi bi-share-fill"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ICON + TEXT BUTTONS -->
+    <div class="card shadow-sm mb-4">
+      <div class="card-header bg-success text-white py-3">
+        <h6 class="fw-bold mb-0">Icon + Text Buttons</h6>
+      </div>
+      <div class="card-body">
+        <div class="d-flex flex-wrap gap-2">
+          <button class="btn btn-primary">
+            <i class="bi bi-plus-circle-fill me-2"></i>Add New
+          </button>
+          <button class="btn btn-danger">
+            <i class="bi bi-trash-fill me-2"></i>Delete
+          </button>
+          <button class="btn btn-success">
+            <i class="bi bi-check-circle-fill me-2"></i>Confirm
+          </button>
+          <button class="btn btn-warning">
+            <i class="bi bi-exclamation-triangle-fill me-2">
+            </i>Warning
+          </button>
+          <button class="btn btn-dark">
+            <i class="bi bi-download me-2"></i>Download
+          </button>
+          <button class="btn btn-outline-primary">
+            <i class="bi bi-arrow-left me-2"></i>Back
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOOLBAR EXAMPLE -->
+    <div class="card shadow-sm mb-4">
+      <div class="card-header bg-dark text-white py-3">
+        <h6 class="fw-bold mb-0">
+          ✅ Practical Example — Toolbar
+        </h6>
+      </div>
+      <div class="card-body">
+
+        <!-- Text Editor Toolbar -->
+        <div class="border rounded p-2 mb-3 bg-white 
+                    d-flex flex-wrap gap-1">
+          <button class="btn btn-sm btn-outline-dark" 
+                  title="Bold">
+            <i class="bi bi-type-bold"></i>
+          </button>
+          <button class="btn btn-sm btn-outline-dark" 
+                  title="Italic">
+            <i class="bi bi-type-italic"></i>
+          </button>
+          <button class="btn btn-sm btn-outline-dark" 
+                  title="Underline">
+            <i class="bi bi-type-underline"></i>
+          </button>
+          <div class="vr mx-1"></div>
+          <button class="btn btn-sm btn-outline-dark" 
+                  title="Align Left">
+            <i class="bi bi-text-left"></i>
+          </button>
+          <button class="btn btn-sm btn-outline-dark" 
+                  title="Align Center">
+            <i class="bi bi-text-center"></i>
+          </button>
+          <button class="btn btn-sm btn-outline-dark" 
+                  title="Align Right">
+            <i class="bi bi-text-right"></i>
+          </button>
+          <div class="vr mx-1"></div>
+          <button class="btn btn-sm btn-outline-dark" 
+                  title="Image">
+            <i class="bi bi-image"></i>
+          </button>
+          <button class="btn btn-sm btn-outline-dark" 
+                  title="Link">
+            <i class="bi bi-link-45deg"></i>
+          </button>
+          <button class="btn btn-sm btn-outline-danger 
+                         ms-auto" title="Delete">
+            <i class="bi bi-trash-fill"></i>
+          </button>
+          <button class="btn btn-sm btn-success" 
+                  title="Save">
+            <i class="bi bi-floppy-fill me-1"></i>Save
+          </button>
+        </div>
+
+        <textarea class="form-control" rows="3"
+                  placeholder="Type something here...">
+        </textarea>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

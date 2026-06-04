@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 16.2 - Badge Overlay</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+  <div class="container my-5">
+    <h2 class="text-center fw-bold mb-5">
+      Exercise 16.2 - Overlay Badge on Image
+    </h2>
+
+    <!-- BASIC OVERLAY -->
+    <div class="card shadow-sm mb-4">
+      <div class="card-header bg-primary text-white py-3">
+        <h6 class="fw-bold mb-0">
+          position-relative + position-absolute
+        </h6>
+      </div>
+      <div class="card-body">
+        <div class="row g-4 justify-content-center">
+
+          <!-- Top-right badge -->
+          <div class="col-md-3 col-6 text-center">
+            <div class="position-relative d-inline-block">
+              <img src="https://picsum.photos/seed/p1/200/200"
+                   class="rounded shadow" width="160"
+                   height="160" alt="Product">
+              <span class="position-absolute top-0 end-0 
+                           badge bg-danger rounded-pill 
+                           m-2">NEW</span>
+            </div>
+            <p class="mt-2 small">
+              <code>top-0 end-0</code> — Top Right
+            </p>
+          </div>
+
+          <!-- Top-left badge -->
+          <div class="col-md-3 col-6 text-center">
+            <div class="position-relative d-inline-block">
+              <img src="https://picsum.photos/seed/p2/200/200"
+                   class="rounded shadow" width="160"
+                   height="160" alt="Product">
+              <span class="position-absolute top-0 start-0 
+                           badge bg-success rounded-pill 
+                           m-2">SALE</span>
+            </div>
+            <p class="mt-2 small">
+              <code>top-0 start-0</code> — Top Left
+            </p>
+          </div>
+
+          <!-- Bottom-right badge -->
+          <div class="col-md-3 col-6 text-center">
+            <div class="position-relative d-inline-block">
+              <img src="https://picsum.photos/seed/p3/200/200"
+                   class="rounded shadow" width="160"
+                   height="160" alt="Product">
+              <span class="position-absolute bottom-0 end-0 
+                           badge bg-warning text-dark 
+                           rounded-pill m-2">HOT</span>
+            </div>
+            <p class="mt-2 small">
+              <code>bottom-0 end-0</code> — Bottom Right
+            </p>
+          </div>
+
+          <!-- Bottom-left badge -->
+          <div class="col-md-3 col-6 text-center">
+            <div class="position-relative d-inline-block">
+              <img src="https://picsum.photos/seed/p4/200/200"
+                   class="rounded shadow" width="160"
+                   height="160" alt="Product">
+              <span class="position-absolute bottom-0 start-0 
+                           badge bg-primary rounded-pill 
+                           m-2">TOP</span>
+            </div>
+            <p class="mt-2 small">
+              <code>bottom-0 start-0</code> — Bottom Left
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- PRODUCT CARDS WITH OVERLAYS -->
+    <div class="card shadow-sm mb-4">
+      <div class="card-header bg-dark text-white py-3">
+        <h6 class="fw-bold mb-0">
+          ✅ Practical Example — Product Cards with Badges
+        </h6>
+      </div>
+      <div class="card-body">
+        <div class="row g-4">
+
+          <div class="col-md-4">
+            <div class="card border-0 shadow rounded-4 h-100">
+              <div class="position-relative">
+                <img src="https://picsum.photos/seed/pp1/400/250"
+                     class="card-img-top rounded-top-4"
+                     alt="Product">
+                <span class="position-absolute top-0 end-0 
+                             badge bg-danger rounded-pill 
+                             m-2 px-3 py-2">SALE 20%</span>
+              </div>
+              <div class="card-body p-3">
+                <h6 class="fw-bold">Wireless Headphones</h6>
+                <p class="text-muted small mb-2">
+                  Premium sound quality
+                </p>
+                <span class="fw-bold text-danger">₹2,499</span>
+                <span class="text-muted text-decoration-line-through
+                              ms-2 small">₹3,199</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card border-0 shadow rounded-4 h-100">
+              <div class="position-relative">
+                <img src="https://picsum.photos/seed/pp2/400/250"
+                     class="card-img-top rounded-top-4"
+                     alt="Product">
+                <span class="position-absolute top-0 start-0 
+                             badge bg-success rounded-pill 
+                             m-2 px-3 py-2">NEW</span>
+                <span class="position-absolute top-0 end-0 
+                             badge bg-primary rounded-pill 
+                             m-2 px-3 py-2">⭐ TOP</span>
+              </div>
+              <div class="card-body p-3">
+                <h6 class="fw-bold">Smart Watch</h6>
+                <p class="text-muted small mb-2">
+                  Track your fitness goals
+                </p>
+                <span class="fw-bold text-primary">₹5,999</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card border-0 shadow rounded-4 h-100">
+              <div class="position-relative">
+                <img src="https://picsum.photos/seed/pp3/400/250"
+                     class="card-img-top rounded-top-4"
+                     alt="Product">
+                <span class="position-absolute bottom-0 
+                             start-0 badge bg-dark 
+                             rounded-pill m-2 px-3 py-2">
+                  LIMITED
+                </span>
+              </div>
+              <div class="card-body p-3">
+                <h6 class="fw-bold">Laptop Stand</h6>
+                <p class="text-muted small mb-2">
+                  Ergonomic design
+                </p>
+                <span class="fw-bold text-dark">₹1,299</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

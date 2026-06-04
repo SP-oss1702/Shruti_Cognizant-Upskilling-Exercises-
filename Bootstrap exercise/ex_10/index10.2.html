@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 10.2 - Nav Tabs & Pills</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="container my-5">
+    <h2 class="text-center fw-bold mb-5">Exercise 10.2 - Nav, Tabs & Pills</h2>
+
+    <!-- BASIC NAV -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="fw-bold text-primary mb-3">Basic Nav</h5>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- NAV TABS WITH CONTENT -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="fw-bold text-success mb-3">Nav Tabs</h5>
+
+        <ul class="nav nav-tabs" id="myTabs">
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab"
+               href="#home">🏠 Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab"
+               href="#profile">👤 Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab"
+               href="#settings">⚙️ Settings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab"
+               href="#contact">📞 Contact</a>
+          </li>
+        </ul>
+
+        <!-- TAB CONTENT -->
+        <div class="tab-content mt-3">
+          <div class="tab-pane fade show active" id="home">
+            <h5>Home Tab</h5>
+            <p>Welcome to the Home tab! This is the default active tab content.</p>
+          </div>
+          <div class="tab-pane fade" id="profile">
+            <h5>Profile Tab</h5>
+            <p>This is the Profile tab content. Add your profile details here.</p>
+          </div>
+          <div class="tab-pane fade" id="settings">
+            <h5>Settings Tab</h5>
+            <p>This is the Settings tab content. Configure your preferences here.</p>
+          </div>
+          <div class="tab-pane fade" id="contact">
+            <h5>Contact Tab</h5>
+            <p>This is the Contact tab content. Reach us anytime!</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- NAV PILLS WITH CONTENT -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="fw-bold text-danger mb-3">Nav Pills</h5>
+
+        <ul class="nav nav-pills mb-3" id="myPills">
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="pill"
+               href="#pill-home">🏠 Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="pill"
+               href="#pill-profile">👤 Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="pill"
+               href="#pill-messages">✉️ Messages</a>
+          </li>
+        </ul>
+
+        <!-- PILL CONTENT -->
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="pill-home">
+            <h5>Home Pill</h5>
+            <p>Welcome! This is the Home pill content section.</p>
+          </div>
+          <div class="tab-pane fade" id="pill-profile">
+            <h5>Profile Pill</h5>
+            <p>This is the Profile pill content section.</p>
+          </div>
+          <div class="tab-pane fade" id="pill-messages">
+            <h5>Messages Pill</h5>
+            <p>This is the Messages pill content section.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- NAV JUSTIFIED -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="fw-bold text-warning mb-3">Nav Justified (Equal Width)</h5>
+        <ul class="nav nav-tabs nav-justified">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Settings</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- VERTICAL NAV PILLS -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="fw-bold text-dark mb-3">Vertical Nav Pills</h5>
+        <div class="d-flex gap-3">
+
+          <ul class="nav nav-pills flex-column" id="verticalPills">
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="pill"
+                 href="#v-home">🏠 Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill"
+                 href="#v-about">📖 About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill"
+                 href="#v-services">🛠️ Services</a>
+            </li>
+          </ul>
+
+          <div class="tab-content flex-grow-1">
+            <div class="tab-pane fade show active" id="v-home">
+              <h5>Home</h5>
+              <p>This is the vertical Home pill content.</p>
+            </div>
+            <div class="tab-pane fade" id="v-about">
+              <h5>About</h5>
+              <p>This is the vertical About pill content.</p>
+            </div>
+            <div class="tab-pane fade" id="v-services">
+              <h5>Services</h5>
+              <p>This is the vertical Services pill content.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

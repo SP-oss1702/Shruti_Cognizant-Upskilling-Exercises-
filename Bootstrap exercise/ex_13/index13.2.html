@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 13.2 - bg-gradient</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+  <!-- HERO — bg-dark + bg-gradient -->
+  <section class="bg-dark bg-gradient text-white text-center py-5">
+    <div class="container py-4">
+      <h1 class="display-3 fw-bold mb-3">bg-dark + bg-gradient</h1>
+      <p class="lead mb-4">
+        Bootstrap's bg-gradient adds a subtle gradient overlay
+        on top of any background color class.
+      </p>
+      <button class="btn btn-light btn-lg px-5">Get Started</button>
+    </div>
+  </section>
+
+  <div class="container my-5">
+    <h4 class="fw-bold text-center mb-5">
+      All Background Gradients
+    </h4>
+
+    <div class="row g-4">
+
+      <!-- bg-primary + gradient -->
+      <div class="col-md-4">
+        <div class="bg-primary bg-gradient text-white 
+                    p-4 rounded shadow text-center">
+          <h5 class="fw-bold">bg-primary</h5>
+          <p class="mb-0">+ bg-gradient</p>
+        </div>
+      </div>
+
+      <!-- bg-secondary + gradient -->
+      <div class="col-md-4">
+        <div class="bg-secondary bg-gradient text-white 
+                    p-4 rounded shadow text-center">
+          <h5 class="fw-bold">bg-secondary</h5>
+          <p class="mb-0">+ bg-gradient</p>
+        </div>
+      </div>
+
+      <!-- bg-success + gradient -->
+      <div class="col-md-4">
+        <div class="bg-success bg-gradient text-white 
+                    p-4 rounded shadow text-center">
+          <h5 class="fw-bold">bg-success</h5>
+          <p class="mb-0">+ bg-gradient</p>
+        </div>
+      </div>
+
+      <!-- bg-danger + gradient -->
+      <div class="col-md-4">
+        <div class="bg-danger bg-gradient text-white 
+                    p-4 rounded shadow text-center">
+          <h5 class="fw-bold">bg-danger</h5>
+          <p class="mb-0">+ bg-gradient</p>
+        </div>
+      </div>
+
+      <!-- bg-warning + gradient -->
+      <div class="col-md-4">
+        <div class="bg-warning bg-gradient text-dark 
+                    p-4 rounded shadow text-center">
+          <h5 class="fw-bold">bg-warning</h5>
+          <p class="mb-0">+ bg-gradient</p>
+        </div>
+      </div>
+
+      <!-- bg-info + gradient -->
+      <div class="col-md-4">
+        <div class="bg-info bg-gradient text-dark 
+                    p-4 rounded shadow text-center">
+          <h5 class="fw-bold">bg-info</h5>
+          <p class="mb-0">+ bg-gradient</p>
+        </div>
+      </div>
+
+      <!-- bg-dark + gradient -->
+      <div class="col-md-4">
+        <div class="bg-dark bg-gradient text-white 
+                    p-4 rounded shadow text-center">
+          <h5 class="fw-bold">bg-dark</h5>
+          <p class="mb-0">+ bg-gradient</p>
+        </div>
+      </div>
+
+      <!-- bg-light + gradient -->
+      <div class="col-md-4">
+        <div class="bg-light bg-gradient text-dark 
+                    p-4 rounded shadow text-center border">
+          <h5 class="fw-bold">bg-light</h5>
+          <p class="mb-0">+ bg-gradient</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- HOW IT WORKS -->
+    <div class="card mt-5 shadow">
+      <div class="card-header bg-dark bg-gradient text-white py-3">
+        <h6 class="fw-bold mb-0">💡 How bg-gradient Works</h6>
+      </div>
+      <div class="card-body p-4">
+
+        <div class="row g-4 text-center">
+
+          <div class="col-md-4">
+            <div class="bg-primary text-white p-4 rounded mb-2">
+              <strong>Without Gradient</strong>
+            </div>
+            <code>class="bg-primary"</code>
+            <p class="text-muted mt-2">
+              Flat solid color only
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <div class="bg-primary bg-gradient text-white 
+                        p-4 rounded mb-2">
+              <strong>With Gradient</strong>
+            </div>
+            <code>class="bg-primary bg-gradient"</code>
+            <p class="text-muted mt-2">
+              Subtle gradient overlay added
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <div class="bg-dark bg-gradient text-white 
+                        p-4 rounded mb-2">
+              <strong>Dark + Gradient</strong>
+            </div>
+            <code>class="bg-dark bg-gradient"</code>
+            <p class="text-muted mt-2">
+              Most used combination
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 2.2 - Bootstrap JS Plugins</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Bootstrap JS Plugins</h1>
+
+    <!-- 1. MODAL BUTTON -->
+    <div class="text-center mb-3">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+        Open Modal (JS Plugin)
+      </button>
+    </div>
+
+    <!-- 2. COLLAPSE BUTTON -->
+    <div class="text-center mb-3">
+      <button class="btn btn-success" data-bs-toggle="collapse" data-bs-target="#collapseBox">
+        Toggle Collapse (JS Plugin)
+      </button>
+      <div class="collapse mt-2" id="collapseBox">
+        <div class="card card-body">
+          This content is shown/hidden using Bootstrap JS!
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. ALERT DISMISS -->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      This alert can be dismissed using Bootstrap JS!
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Bootstrap Modal</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          This modal works because bootstrap.bundle.min.js is linked!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS — must be at bottom of body -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
